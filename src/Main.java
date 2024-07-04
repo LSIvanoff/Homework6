@@ -11,7 +11,7 @@ public class Main {
         }
 
         System.out.println("Задача 3");
-        for (int i = 0; i < 17; i = i+2) {
+        for (int i = 0; i <= 17; i = i + 2) {
             System.out.println(i);
         }
 
@@ -21,12 +21,15 @@ public class Main {
         }
 
         System.out.println("Задача 5");
-        for (int i = 1904; i <= 2096; i = i+4) {
-            System.out.println(i + " год является високосным");
-        }
+        int year = 1904;
+        if ((year >= 1584 && year % 400 == 0) || (year % 100 != 0 && year % 4 == 0)) {
+            for (int i = year; i <= 2096; i = i + 4) {
+                System.out.println(i + " год является високосным");
+            }
+        } else System.out.println(year + " год не является високосным");
 
         System.out.println("Задача 6");
-        for (int i = 7; i <= 98; i = i+7) {
+        for (int i = 7; i <= 98; i = i + 7) {
             System.out.print(i + " ");
         }
 
@@ -49,8 +52,8 @@ public class Main {
         int salary2 = 29000;
         float total2 = 0;
         for (int i = 0; i < 12; i++) {
-            total2 = total2 + total2/100;
             total2 = total2 + salary2;
+            total2 = total2 + total2 / 100;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total2 + " рублей");
         }
 
