@@ -20,15 +20,16 @@ public class Main {
             System.out.println(i);
         }
 
-        System.out.println("Задача 5");
-        int year = 1904;
-        if ((year >= 1584 && year % 400 == 0) || (year % 100 != 0 && year % 4 == 0)) {
-            for (int i = year; i <= 2096; i = i + 4) {
-                System.out.println(i + " год является високосным");
-            }
-        } else System.out.println(year + " год не является високосным");
 
-        System.out.println("Задача 6");
+        System.out.println("Задача 5");
+            for (int i = 1904; i <= 2096; i++) {
+                if (i % 400 == 0 || (i % 100 != 0 && i % 4 == 0)) {
+                    System.out.println(i + " год является високосным");
+                };
+        }
+
+
+            System.out.println("Задача 6");
         for (int i = 7; i <= 98; i = i + 7) {
             System.out.print(i + " ");
         }
