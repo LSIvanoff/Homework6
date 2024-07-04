@@ -27,14 +27,17 @@ public class Main {
 
         System.out.println("Задача 6");
         for (int i = 7; i <= 98; i = i+7) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
+
+        System.out.println(" ");
 
         System.out.println("Задача 7");
         for (int i = 1; i <= 512; i = i + i) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
 
+        System.out.println(" ");
         System.out.println("Задача 8");
         int salary = 29000;
         int total = 0;
